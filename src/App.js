@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import './Components/VideoPlayer/ResponsivePlayer.jsx'
+import ResponsivePlayer from './Components/VideoPlayer/ResponsivePlayer.jsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      {/* <header className="App-header">
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -15,9 +16,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Anshay rocks and rudfwelezzz da world!!!
         </a>
-      </header>
+      </header> */}
+      <ResponsivePlayer />
     </div>
   );
 }
