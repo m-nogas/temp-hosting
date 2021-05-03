@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import './Components/VideoPlayer/ResponsivePlayer.jsx'
-import ResponsivePlayer from './Components/VideoPlayer/ResponsivePlayer.jsx';
+import './components/VideoPlayer/ResponsivePlayer.jsx'
+import ResponsivePlayer from './components/VideoPlayer/ResponsivePlayer.jsx';
 
 function App() {
   return (
