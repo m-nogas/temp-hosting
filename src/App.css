@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+body {
+    color: white;
+    background-color: black;
+    padding: 40px;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.candor-bold {
+    font-weight: 550;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.candor-row {
+    height: 90%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.candor-container {
+    height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.candor-carousel {
+    height: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.candor-android-badge {
+    width: 45%;
+}
+.candor-apple-badge {
+    width: 35%;
+}
+.carousel-inner { 
+    height: 100%;
+}
+.carousel-control-prev {
+    height: 80%;
+}
+.carousel-control-next {
+    height: 80%;
+}
+.carousel-indicators {
+    display: none
+}
+@media (min-width: 576px) {
+    .candor-col-height {
+        height: 100%;
+    }
 }
