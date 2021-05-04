@@ -6,18 +6,22 @@ import DialogueCarousel from './components/DialogueCarousel';
 import DialogueInfoCard from './components/DialogueInfoCard';
 import DownloadPrompt from './components/DownloadPrompt';
 
+// Column layout constants
+const colXs = 12;
+const colMd = 4;
+
 function App() {
   return (
     <div className="App">
       <Container fluid className="candor-container">
         <Row className="candor-row" >
-          <Col xs={12} md={4} className="candor-col-height">
+          <Col xs={colXs} md={colMd} className="candor-col-height">
            <DialogueInfoCard />
           </Col>
-          <Col xs={12} md={4} className="candor-col-height">
+          <Col xs={colXs} md={colMd} className="candor-col-height">
             <DialogueCarousel />
           </Col>
-          <Col xs={12} md={4} className="text-center d-flex align-items-end candor-col-height pb-5">
+          <Col xs={colXs} md={colMd} className="text-center d-flex align-items-end candor-col-height pb-5">
             <DownloadPrompt />
           </Col>
         </Row>
