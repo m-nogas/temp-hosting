@@ -1,4 +1,4 @@
-import StringLibrary from '../StringLibrary.json';
+import StringLibrary from '../Libraries/StringLibrary.json';
 
 const library = StringLibrary.DownloadPrompt;
 
@@ -13,4 +13,4 @@ const DownloadPrompt = () => {
     )
 }
 
-export default DownloadPrompt
+export default DownloadPrompt;
