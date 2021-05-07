@@ -1,16 +1,23 @@
-const DialogueInfoCard = () => {
+const DialogueInfoCard = (props) => {
+  if (props.dialogueMetaData) {
     return (
-        <div className="d-flex align-items-start flex-column" style={{height: '100%'}}>
-            <div>
-              <p className="candor-bold">Coleman H / Glenn L</p>
-              <p className="h2">Why hasn't Canada developed their own COVID-19 vaccine?</p>
-              <p className="font-weight-light">7 responses</p>
-            </div>
-            <div className="mt-auto">
-              <img alt='Candor logo' src='./images/CandorIcon.svg'/>
-            </div>
-        </div>
+      <div className="d-flex align-items-start flex-column" style={{height: '100%'}}>
+          <div>
+            <p className="candor-bold">{props.dialogueMetaData.poster.displayName} / {props.dialogueMetaData.partner.displayName}</p>
+            <p className="h2">{props.dialogueMetaData.caption}</p>
+            <p className="font-weight-light">{props.dialogueMetaData.numberOfPosts} responses</p>
+          </div>
+          <div className="mt-auto">
+            <img alt='Candor logo' src='./images/CandorIcon.svg'/>
+          </div>
+      </div>
+  )
+  } else {
+    // TODO: find a better way for undefined response
+    return (
+      <div></div>
     )
+  }
 }
 
-export default DialogueInfoCard
+export default DialogueInfoCard;

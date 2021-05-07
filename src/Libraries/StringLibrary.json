@@ -2,5 +2,9 @@
     "DownloadPrompt": {
         "joinConversation": "Join the conversation!",
         "downloadPrompt": "Download Candor to comment, like, and start your own conversations"
+    },
+
+    "Errors": {
+        "documentFetchError": "Error getting document: "
     }
 }
