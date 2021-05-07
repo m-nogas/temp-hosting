@@ -8,6 +8,7 @@ const dialogueReducer = (state = null, action) => {
         case dialogueActions.get:
             const dialogue = GetDialogue(action.id);
             
+            console.log("ANSHAY dialogue ", dialogue)
             if (dialogue === undefined) {
                 return state
             } else {

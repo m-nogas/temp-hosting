@@ -8,8 +8,7 @@ const videoFileType = ".m3u8"
 
 class PostPlayer extends React.Component {
   render() {
-    const url = muxURLPrefix + this.props.post.asset.playback_ids[0].id + videoFileType
-    console.log("ANSHAY printing urls for posts ", url)
+    const url = muxURLPrefix + this.props.post.asset.playback_ids[0].id + videoFileType;
     return (
       <div className='player-wrapper'>
         <ReactPlayer
