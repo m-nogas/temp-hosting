@@ -2,12 +2,11 @@ import ReactPlayer from 'react-player';
 import './post-player.css';
 
 
-const muxURLPrefix = "https://stream.mux.com/"
-const videoFileType = ".m3u8"
+const muxURLPrefix = "https://stream.mux.com/";
+const videoFileType = ".m3u8";
 
-class PostPlayer extends React.Component {
-  render() {
-    const url = muxURLPrefix + this.props.post.asset.playback_ids[0].id + videoFileType;
+const PostPlayer = (props) => {
+  const url = muxURLPrefix + props.post.asset.playback_ids[0].id + videoFileType;
     return (
       <div className='player-wrapper'>
         <ReactPlayer
@@ -19,8 +18,6 @@ class PostPlayer extends React.Component {
         />
       </div>
     )
-  }
 }
 
-
-  export default PostPlayer;
+export default PostPlayer;

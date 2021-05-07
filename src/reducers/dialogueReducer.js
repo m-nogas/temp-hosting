@@ -8,7 +8,7 @@ const dialogueReducer = (state = null, action) => {
         case dialogueActions.get:
             const dialogue = GetDialogue(action.id);
             
-            dialogue === undefined ? state : dialogue;
+            return dialogue === undefined ? state : dialogue;
         default:
             return state;
     }
